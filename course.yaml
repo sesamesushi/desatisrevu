@@ -73,7 +73,7 @@ course:
 
   # Locale for internationalization. See modules/i18n/resources/locale for
   # available locales.
-  locale: 'en_US'
+  locale: 'id'
 
   # Whether the course is open to the students.
   now_available: true

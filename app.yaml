@@ -31,6 +31,21 @@ handlers:
   script: main.app
   login: admin
   secure: always
+- url: /
+  upload: index.html
+  static_files: index.html
+- url: /terms.html
+  upload: terms.html
+  static_files: terms.html
+- url: /robots.txt
+  upload: robots.txt
+  static_files: robots.txt
+- url: /humans.txt
+  upload: humans.txt
+  static_files: humans.txt
+- url: /favicon.ico
+  upload: /assets/img/favicon.ico
+  static_files: /assets/img/favicon.ico
 - url: /.*
   script: main.app
   secure: always
