@@ -27,15 +27,15 @@
 
 institution:
   # Name of your institution
-  name: 'Add Your Institution Here'
+  name: 'Eduversitas'
 
   # URL of your institution's webpage
-  url: 'LINK_TO_YOUR_INSTITUTION_HERE'
+  url: 'http://www.eduversitas.com'
 
   # Link and alt text for the logo of the course or your institution
   logo:
-    url: 'assets/img/your_logo_here.png'
-    alt_text: YOUR_LOGO_HERE
+    url: '/assets/img/logo.png'
+    alt_text: Eduversitas
 
 
 ####################
@@ -67,16 +67,26 @@ base:
     </li>'
   after_top_content_ends: '<!-- base.after_top_content_ends -->'
   after_main_content_ends: '<!-- base.after_main_content_ends -->'
-  before_body_tag_ends: '<!-- base.before_body_tag_ends -->'
+  before_body_tag_ends: |
+    <!-- base.before_body_tag_ends --><script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-38121160-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
 
   # Whether to show a G+ button on the header of all pages.
   show_gplus_button: False
 
   # Header phrase for the main navigation bar
-  nav_header: 'Search Education'
+  nav_header: '<strong><font color="#dd4b39">Eduversitas</font></strong>'
 
   # Link to your privacy policy and terms of service
-  privacy_terms_url: 'PRIVACY_POLICY_AND_TERMS_OF_SERVICE'
+  privacy_terms_url: '/terms.html'
 
   # Locale for internationalization of explorer pages. See
   # modules/i18n/resources/locale for available locales.

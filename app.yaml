@@ -6,6 +6,7 @@ threadsafe: false
 
 env_variables:
   GCB_PRODUCT_VERSION: '1.5.1'
+  gcb_can_share_student_profile: true
 
 inbound_services:
 - warmup
